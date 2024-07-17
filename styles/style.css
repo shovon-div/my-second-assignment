@@ -46,6 +46,37 @@ body{
     text-align: center;
     padding-top: 15px;
 }
+.nav-bar, .banner{
+    max-width: 1060px;
+    margin: 0 auto;
+}
 /* Banner-style here */
-
+@font-face {
+    font-family: maima;
+    src: url(../Miama.ttf);
+}
+.banner{
+    display: flex;
+}
+.banner-title{
+    font-weight: 900;
+    font-size: 4.875rem;
+    color: rgb(255, 255, 255);
+}
+.banner-dis{
+    font-weight: 400;
+    font-size: 1rem;
+    color:  rgba(255, 255, 255, 0.5);
+}
+span{
+    font-family: maima;
+    font-weight: 900;
+    font-size: 4.875rem;
+}
+.btn-join{
+    width: 244px;
+    height: 54px;
+    border-radius: 42px;
+    background-color: rgb(230, 83, 60);
+}
 
