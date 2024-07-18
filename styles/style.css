@@ -12,6 +12,7 @@ body{
   font-variation-settings:
     "slnt" 0;
 }
+/* Header section */
 /* Nav-Bar style */
 .nav-bar{
     display: flex;
@@ -180,4 +181,51 @@ body{
         bottom: 700px;
     }
 }
+/* Main section here */
+/* Habit section */
+.habit, .all-cards{
+    max-width: 1060px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+.habit-title{
+    font-weight:900 ;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+.habit-dis{
+    font-weight:400 ;
+    font-size: .875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.all-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.card{
+    width: 232px;
+    height: 274px;
+}
+.img-style{
+    border-radius: 50%;
+}
+.card-title{
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: rgb(255, 255, 255);
+}
+.card-dis{
+    font-weight:400 ;
+    font-size: .875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+@media screen and (max-width:576px){
+    .all-cards{
+       grid-template-columns: repeat(1,1fr);
+       margin-left: 150px;
+       gap: 30px;
+    }
+}
+
 
