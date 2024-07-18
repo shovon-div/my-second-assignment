@@ -50,6 +50,17 @@ body{
     max-width: 1060px;
     margin: 0 auto;
 }
+#check-btn{
+    /* float: right; */
+    margin-right: 0;
+    margin-top: 35px;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    display: none;
+}
+#checkbox{
+    display: none;
+}
 /* Banner-style here */
 @font-face {
     font-family: maima;
@@ -57,6 +68,10 @@ body{
 }
 .banner{
     display: flex;
+    gap: 80px;
+}
+.Images-2{
+    width: 100%;
 }
 .banner-title{
     font-weight: 900;
@@ -68,9 +83,9 @@ body{
     font-size: 1rem;
     color:  rgba(255, 255, 255, 0.5);
 }
-span{
+.shape{
     font-family: maima;
-    font-weight: 900;
+    font-weight:700;
     font-size: 4.875rem;
 }
 .btn-join{
@@ -78,5 +93,91 @@ span{
     height: 54px;
     border-radius: 42px;
     background-color: rgb(230, 83, 60);
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: rgb(255, 255, 255);
+}
+.btn-download{
+    border:1px solid rgb(255, 255, 255);
+    width: 244px;
+    height: 54px;
+    border-radius: 42px;
+    background-color: black;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: rgb(255, 255, 255);   
+}
+.btn-tutorial{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid rgb(255, 255, 255,0.1);
+    width: 206px;
+    height: 96px;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.54);
+    text-align: center;
+    backdrop-filter: blur(20px);
+    margin-left: -113px;
+    margin-top: -150px;
+}
+.circel{
+    width: 40px;
+    height:40px ;
+    background-color: rgb(230, 83, 60);
+    border-radius: 50%;
+}
+.tutorial-title{
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: rgb(250, 250, 249);
+}
+.tutorial-dis{
+    font-weight:400 ;
+    font-size: 1rem;
+    color:rgba(239, 237, 232, 0.65) ;
+}
+.btn-work{
+    width: 193px;
+    height: 98px;
+    border-radius: 12px;
+    background-color: rgba(48, 48, 48, 0.1);
+    backdrop-filter: blur(20px);
+    position: relative;
+    left: 200px;
+    bottom: 400px;
+    text-align: center;
+}
+.Workout-title{
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.Workout-dis{
+    font-weight: 400;
+    font-family: .81rem;
+    color:rgba(255, 255, 255, 0.65) ;
+}
+@media screen and (max-width:576px) {
+    #check-btn{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .btn-tutorial{
+        margin-left:0px ;
+        margin-top: -300px;
+    }
+    .btn-work{
+        position: relative;
+        left: 300px;
+        bottom: 700px;
+    }
 }
 
