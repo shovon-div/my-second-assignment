@@ -69,7 +69,7 @@ body{
 }
 .banner{
     display: flex;
-    gap: 80px;
+    gap: 80px;  
 }
 .Images-2{
     width: 100%;
@@ -78,6 +78,7 @@ body{
     font-weight: 900;
     font-size: 4.875rem;
     color: rgb(255, 255, 255);
+    line-height: 5.265rem;
 }
 .banner-dis{
     font-weight: 400;
@@ -86,8 +87,8 @@ body{
 }
 .shape{
     font-family: maima;
-    font-weight:700;
-    font-size: 4.875rem;
+    font-weight:400;
+    font-size: 10rem;
 }
 .btn-join{
     width: 244px;
@@ -164,12 +165,14 @@ body{
 @media screen and (max-width:576px) {
     #check-btn{
         display: block;
+        padding-right: 10px;
     }
     .nav-links{
         display: none;
     }
     .banner{
         flex-direction: column;
+        padding: 10px;
     }
     .btn-tutorial{
         margin-left:0px ;
@@ -180,6 +183,9 @@ body{
         left: 300px;
         bottom: 700px;
     }
+    .nav-title{
+        padding: 10px;
+    }
 }
 /* Main section here */
 /* Habit section */
@@ -187,7 +193,7 @@ body{
     max-width: 1060px;
     margin: 0 auto;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 85px;  
 }
 .habit-title{
     font-weight:900 ;
@@ -227,5 +233,203 @@ body{
        gap: 30px;
     }
 }
+
+.run-extra{
+    max-width: 1060px;
+    margin: 50px auto;
+    height: 371px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.discription{
+    padding-bottom: 50px;
+}
+.discription-title{
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+.discription-para{
+    font-weight: 400;
+    font-size: .875rem;
+    color: rgba(255, 255, 255, 0.5);
+    
+}
+.img-run{
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+}
+.join-btn{
+    width: 244px;
+    height: 54px;
+    border-radius: 42px;
+    background-color: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+@media screen and (max-width:576px){
+    .run-extra{
+        flex-direction: column;
+    }
+    .run-extra{
+        width: 353px;
+        height: 750px;
+    }
+}
+ /* Calculator part */
+
+ .calculator{
+    text-align: center;
+    margin-top: 50px;
+ }
+ .calculator-info{
+    background-color: rgb(34, 34, 34);
+    max-width: 1440px;
+    height: 450px;
+    margin: 0 auto;
+}
+ .calculator-info{
+    display: flex;
+    justify-content: space-around;
+ }
+ .calculator-title{
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+ }
+.cal-dis{
+    font-weight: 400;
+    font-size: .875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.table-title{
+    font-weight: 900;
+    font-size: 1.75rem;
+    color: rgb(255, 255, 255);
+}
+.table-style{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    width: 310px;
+    height: 216px;
+}
+th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    padding: 10px;
+}
+td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 400;
+    font-size: .875rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: justify;
+    padding: 10px;
+}
+.form-title{
+    font-weight:900 ;
+    font-size: 1.75rem;
+    color: rgb(255, 255, 255);
+}
+.form-dis{
+    font-weight: 400;
+    font-size: .875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+.cal-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+.input-item{
+    width: 280px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+#sex{
+    margin: 0;
+    padding: 0;
+    width: 288px;
+    height: 50px;
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+.activity-factor{
+    margin: 0;
+    padding: 0;
+    width: 580px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.option{
+    background-color: rgba(255, 255, 255, 0.1);
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+.form-btn{
+    width: 244px;
+    height: 54px;
+    border-radius: 42px;
+    background-color: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.125rem; 
+}
+@media screen and (max-width:576px){
+    .calculator-info{
+        display: flex;
+        flex-direction: column;
+        height: 880px;
+    }
+    .cal-info{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    .calculator{ 
+        text-align: left ;
+        margin-left: 10px;
+    }
+    
+    .form-item{
+        width: 260px;
+        height: 48px;
+    }
+    .activity-factor{
+        width: 288px;
+        margin-left: 10px;
+    }
+    .form-btn{
+        margin-left: 10px;
+    }
+} 
 
 
