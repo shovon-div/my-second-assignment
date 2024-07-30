@@ -409,27 +409,104 @@ td{
         flex-direction: column;
         height: 880px;
     }
-    .cal-info{
+    /* .cal-info{
         display: flex;
         flex-direction: column;
         padding-left: 10px;
-    }
+    } */
     .calculator{ 
         text-align: left ;
         margin-left: 10px;
+        
     }
     
-    .form-item{
-        width: 260px;
+    .input-item{
+        width: 255px;
         height: 48px;
-    }
-    .activity-factor{
-        width: 288px;
         margin-left: 10px;
     }
+    .activity-factor{
+        width: 550px;
+        margin-left: 10px;
+    }
+    #sex{
+        width: 260px;
+        height: 48px;
+        margin-left: 10px;
+    }
+
+    
     .form-btn{
         margin-left: 10px;
     }
 } 
+/* Team member discription */
 
+.team-info, .team-members{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.team-info{
+    text-align: center;
+}
+.team-title{
+    font-weight: 900;
+    font-size: 3rem ;
+    color: rgb(255, 255, 255);
+}
+.team-dis{
+    font-weight: 400;
+    font-size: .875rem ;
+    color:rgba(255, 255, 255, 0.5) ;
+}
+.photo-name{
+    font-weight: 700;
+    font-size: 1.20rem;
+    color: rgb(255, 255, 255);
+}
+.photo-bio{
+    font-weight: 400;
+    font-size: .875rem ;
+    color:rgba(255, 255, 255, 0.5) ;
+}
+.team-members{
+    width: 1060px;
+    height: 600px;
+    border-radius: 18px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.photo-card{  
+    position: relative;
+    width: 327px;
+    height: 272px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.photo-info{
+    position: absolute;
+    margin-top: -110px;
+}
+.photo-style{
+    width: 100%;
+    height: 100%;  
+    border-radius: 19px;
+}
+@media screen and (max-width:576px) {
+    .team-members{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        height: 100%;
+    }
+    .photo-card{
+        margin-left: 90px;
+    }
+    .team-info{
+        margin-left: 10px;
+    }
+}
 
