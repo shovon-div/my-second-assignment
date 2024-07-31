@@ -2,7 +2,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: black ;
+    background-color: black ; 
 }
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -129,6 +129,12 @@ body{
     background-color: rgb(230, 83, 60);
     border-radius: 50%;
 }
+.fa-play{
+    color: white;
+    padding: 8px;
+    font-size: x-large;
+    visibility: hidden;
+}
 .tutorial-title{
     font-weight: 900;
     font-size: 1.5rem;
@@ -185,6 +191,12 @@ body{
     }
     .nav-title{
         padding: 10px;
+    }
+    .fa-play{
+        color: white;
+        padding: 8px;
+        font-size: x-large;
+        visibility: visible;
     }
 }
 /* Main section here */
@@ -379,7 +391,6 @@ td{
     padding: 0;
     width: 580px;
     height: 48px;
-    background-color: rgba(255, 255, 255, 0.1);
     border: 0;
     border-radius: 8px;
     font-weight: 400;
@@ -387,8 +398,9 @@ td{
     color: rgba(255, 255, 255, 0.6);
     margin-top: 10px;
     margin-left: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
-.option{
+select option:hover{
     background-color: rgba(255, 255, 255, 0.1);
     font-weight: 400;
     font-size: 1rem;
@@ -409,17 +421,10 @@ td{
         flex-direction: column;
         height: 880px;
     }
-    /* .cal-info{
-        display: flex;
-        flex-direction: column;
-        padding-left: 10px;
-    } */
     .calculator{ 
         text-align: left ;
-        margin-left: 10px;
-        
+        margin-left: 10px;  
     }
-    
     .input-item{
         width: 255px;
         height: 48px;
@@ -434,8 +439,6 @@ td{
         height: 48px;
         margin-left: 10px;
     }
-
-    
     .form-btn{
         margin-left: 10px;
     }
@@ -500,13 +503,72 @@ td{
         display: grid;
         grid-template-columns: repeat(1,1fr);
         gap: 30px;
-        height: 100%;
+        height:100%;
+        width:320px;
+        /* overflow: hidden; */
     }
     .photo-card{
-        margin-left: 90px;
+        margin-left: 5px;
     }
     .team-info{
         margin-left: 10px;
     }
+    /* #hide-ph{
+        visibility: hidden;
+    } */
 }
-
+/* Footer section here */
+footer{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-info, .table-info{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.footer-info{
+    margin-right: 85px;
+}
+.footer-sec{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.table-info{
+   display: flex;
+   gap: 100px;
+   margin-left: 85px;
+} 
+.footer-title{
+    font-weight: 800;
+    font-size: 4.375rem;
+    color: rgb(230, 83, 60);
+    font-style: italic;
+}
+.footer-dis{
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+h4{
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(255, 255, 255); 
+}
+h5{
+    list-style: none;
+    font-weight: 400;
+    font-size: 1.4375rem;
+    color:rgba(255, 255, 255, 0.5) ;
+}
+@media screen and (max-width:576px) {
+    .footer-sec{
+        display: flex;
+        flex-direction: column;
+    }
+    .table-info{
+        display: flex;
+        flex-direction: column;
+    }
+}
