@@ -362,10 +362,11 @@ td{
 .cal-info{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 10px;
+    grid-template-rows: 1fr,1fr,1fr;
+    gap: 10px; 
     margin: 0;
-    padding: 0;
-}
+    padding: 0; 
+} 
 .input-item{
     width: 280px;
     height: 48px;
@@ -426,18 +427,18 @@ select option:hover{
         margin-left: 10px;  
     }
     .input-item{
-        width: 255px;
+        width: 100%;
         height: 48px;
-        margin-left: 10px;
+        /* margin-left: 10px; */
     }
     .activity-factor{
-        width: 550px;
-        margin-left: 10px;
+        width: 100%;
+        /* margin-left: 10px; */
     }
     #sex{
-        width: 260px;
+        width:100%;
         height: 48px;
-        margin-left: 10px;
+        /* margin-left: 10px; */
     }
     .form-btn{
         margin-left: 10px;
@@ -562,6 +563,16 @@ h5{
     font-size: 1.4375rem;
     color:rgba(255, 255, 255, 0.5) ;
 }
+hr{
+    width: 1060px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.end-footer{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.5);
+}
 @media screen and (max-width:576px) {
     .footer-sec{
         display: flex;
@@ -570,5 +581,8 @@ h5{
     .table-info{
         display: flex;
         flex-direction: column;
+    }
+    .table-info{
+        margin-left: 100px;
     }
 }
