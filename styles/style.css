@@ -2,7 +2,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: black ; 
+    background-color: black ;  
 }
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -295,6 +295,78 @@ body{
         height: 750px;
     }
 }
+/* ...........MY Part............... */
+.pricing-cards{
+    max-width: 1060px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.pricing-card{
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 500px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 18px;
+}
+.pricing-card:hover{
+    background-color:rgb(46, 57, 66);
+    box-shadow: 5px 10px 15px rgb(221, 214, 214);
+}
+.pricing-title{
+    font-weight: 900;
+    line-height: ;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.title{
+    display: block;
+    padding-top: 30px;
+    padding-left: 35px;
+    font-weight: 900;
+    font-size: 1.75rem;
+    color:  rgb(255, 255, 255);
+}
+.dis{
+    display: block;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    font-weight: 500;
+    font-size: 1rem;
+    color:  rgb(230, 83, 60);
+}
+.price-ul{
+    list-style: none;
+    list-style-position: inside;
+    line-height: 30px;
+    color:  rgb(255, 255, 255);
+}
+.fa-check{
+    color:rgb(230, 83, 60) ;
+}
+.price-btn{
+    width: 244px;
+    height: 54px;
+    border-radius: 42px;
+    background-color: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-left: 25px;
+}
+@media  screen and (max-width:576px) {
+    .pricing-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
  /* Calculator part */
 
  .calculator{
@@ -401,11 +473,14 @@ td{
     margin-left: 5px;
     background-color: rgba(255, 255, 255, 0.1);
 }
-select option:hover{
-    background-color: rgba(255, 255, 255, 0.1);
-    font-weight: 400;
-    font-size: 1rem;
-    color: rgba(255, 255, 255, 0.6);
+.input-item:hover{
+    background-color:rgb(46, 57, 66);
+}
+.activity-factor:hover{
+    background-color:rgb(46, 57, 66);
+}
+#sex:hover{
+    background-color:rgb(46, 57, 66);
 }
 .form-btn{
     width: 244px;
